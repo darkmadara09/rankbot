@@ -42,7 +42,7 @@ def top_members(_, message):
             first_name = "Unknown"
         
         total_messages = member["total_messages"]
-        user_info = f"{idx}. 👤{user.mention}, •{total_messages}\n"
+        user_info = f"{id}. 👤{user.mention}, •{total_messages}\n"
         response += user_info
 
     message.reply_text(response)
